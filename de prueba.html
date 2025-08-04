@@ -1,0 +1,99 @@
+<html>
+  <head>
+    <title>Formulario proyecto</title>
+    <style>
+      .typewriter {
+        overflow: hidden;
+        border-right: .15em solid #034b12;
+        white-space: nowrap;
+        margin: 0 auto;
+        animation: typing 3.5s steps(30, end), blink-caret .75s step-end infinite;
+        font-size: 30px;
+        color: #002206;
+      }
+
+      @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+      }
+
+      @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color: rgba(212, 255, 255, 0.712); }
+      }
+
+      body {
+        margin: 0;
+        height: 100vh;
+        background-image: url("reciclaje.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .contenedor {
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        width: 420px;
+        text-align: center;
+      }
+
+      form p {
+        margin: 10px 0;
+        text-align: left;
+      }
+
+      input {
+        background-color: #9ce27e;
+        border: none;
+        padding: 5px;
+        width: 100%;
+        box-sizing: border-box;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <div style="text-align: center; border-color: #002206; background-color: #009721; border-radius: 55px; width:420px; margin:0 auto;">
+        <p style="font-size: 35px; font-family: rosart;"> FORMULARIO </p>
+      </div>
+
+      <div class="contenedor">
+        <div style="border: solid #06402B; padding: 10px;">
+          <h1 class="typewriter"> Producción de Ecoladrillos </h1>
+          <form method="post">
+            <p>Fecha de producción:<br>
+              <input type="date" name="FECHA">
+            </p>
+            <p>Cantidad de ladrillos:<br>
+              <input type="number" name="cantidad" placeholder="Ejemplo 1, 2, 3...." required>
+            </p>
+            <p>Tipo de plástico:<br>
+              <input type="text" name="T. plastico" placeholder="PET, HDPE..." required>
+            </p>
+            <p>Peso del plástico:<br>
+              <input type="number" name="Peso" placeholder="3.02..." required> kg
+            </p>
+            <p>Color del ladrillo:<br>
+              <input type="text" name="color" placeholder="Azul, verde..." required>
+            </p>
+            <p>Responsable:<br>
+              <input type="text" name="Nombre" placeholder="Isabel Alejandra Mejia" required>
+            </p>
+            <p>Costo aproximado:<br>
+              <input type="number" name="costo" placeholder="15" required> $
+            </p>
+            <p><input type="submit" value="Enviar"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
